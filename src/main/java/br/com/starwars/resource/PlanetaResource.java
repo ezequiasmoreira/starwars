@@ -1,4 +1,4 @@
-package br.com.starwars.resources;
+package br.com.starwars.resource;
 
 import java.util.List;
 

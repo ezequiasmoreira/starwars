@@ -1,4 +1,4 @@
-package br.com.starwars.specs;
+package br.com.starwars.spec;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -25,7 +25,7 @@ public class PlanetaSpec  {
 		
 		if(planetaNew != null) {
 			throw new ValidateException(
-					"Já existe um planeta com o nome: " + planeta.getNome() + " cadastrado.", throwable);
+					"Já existe um planeta cadastrado com o nome " + planeta.getNome() + ".", throwable);
 		}
 	}
 	
@@ -35,7 +35,7 @@ public class PlanetaSpec  {
 			planetaIntegracaoDTO.getName().equals(planeta.getNome()));
 		if(!nomeValido) {
 			throw new ValidateException(
-					"Planeta: " + planeta.getNome() + " inválido.", throwable);
+					"Planeta " + planeta.getNome() + " inválido.", throwable);
 		}
 	}
 }

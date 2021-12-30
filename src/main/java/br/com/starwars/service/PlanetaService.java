@@ -11,7 +11,7 @@ import br.com.starwars.dto.PlanetaResultDTO;
 import br.com.starwars.exception.ObjectNotFoundException;
 import br.com.starwars.integracao.PlanetaIntegracao;
 import br.com.starwars.repository.PlanetaRepository;
-import br.com.starwars.specs.PlanetaSpec;
+import br.com.starwars.spec.PlanetaSpec;
 
 @Service
 public class PlanetaService {
