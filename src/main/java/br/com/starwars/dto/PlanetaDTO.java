@@ -12,7 +12,7 @@ public class PlanetaDTO {
 	private String terreno;
 	
 	private Integer aparicaoFilme;
-
+	
 	public Integer getId() {
 		return id;
 	}

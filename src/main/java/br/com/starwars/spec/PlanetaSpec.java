@@ -22,7 +22,7 @@ public class PlanetaSpec  {
 	public void isNomeUnico(Planeta planeta) {
 		Throwable throwable = new Throwable("nome");
 		Planeta planetaNew = repository.findByNome(planeta.getNome());
-		
+		System.out.println(planetaNew);
 		if(planetaNew != null) {
 			throw new ValidateException(
 					"Já existe um planeta cadastrado com o nome " + planeta.getNome() + ".", throwable);
